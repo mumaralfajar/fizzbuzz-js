@@ -13,16 +13,16 @@ let resultBox = document.getElementById('result');
 let fizzBuzz = function (n) {
     if (n % 3 == 0 && n % 5 == 0) {
         console.log(`${n} is FizzBuzz`);
-        return 'FizzBuzz!';
+        return "It'\s FizzBuzz!";
     } else if (n % 3 == 0) {
         console.log(`${n} is Fizz`);
-        return 'Fizz!';
+        return "It'\s Fizz!";
     } else if (n % 5 == 0) {
         console.log(`${n} is Buzz`);
-        return 'Buzz';
+        return "It'\s Buzz";
     } else {
         console.log(`${n} is not Fizz or Buzz`);
-        return 'not Fizz or Buzz!';
+        return `${n} Is not Fizz or Buzz!`;
     };
 }
 
@@ -40,7 +40,7 @@ let whatIsIt = function (event) {
 }
 
 let clearResult = function () {
-    result.innerHTML = "";
+    result.innerHTML = "...";
 }
 
 
