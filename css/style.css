@@ -1,0 +1,112 @@
+/* TODO: Small animation when "result" box updates */
+
+body {
+    font-family: system-ui, sans-serif;
+    text-align: center;
+    margin: 0em;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 750px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+h1 {
+    font-size: 5em;
+    margin-bottom: 0;
+    color: #000;
+}
+
+h2 {
+    width: max-content;
+    margin: 2rem auto;
+    padding: 1rem 4rem;
+    font-size: 2em;
+    color: #fff;
+    background-color: #000;
+    transform: rotate(-2deg);
+    border-radius: .25em;
+    transition: 0.3s;
+}
+
+h2:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+p {
+    font-size: 1.5em;
+    line-height: 1.5;
+    color: #000;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+input {
+    border: solid 4px #000;
+    border-radius: .5em;
+    padding: .5rem 1rem;
+    margin-right: .5em;
+    max-width: 4em;
+    font-size: 2em;
+    text-align: center;
+}
+
+input:focus {
+    outline: none;
+    border: solid 5px #000;
+}
+
+button {
+    border: solid 4px #000;
+    border-radius: .5em;
+    color: #fff;
+    background-color: #000;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 1rem 2rem;
+}
+
+/* .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 0px 72px 32px 72px;
+    margin-top: 0px;
+    color: #fff;
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 10px 10px 20px -10px rgba(255, 255, 255, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+} */
+
+.card {
+    position: absolute;
+	top: 50%;
+	right: 50%;
+	transform: translate(50%,-50%);
+    max-width: 90%;
+	padding: 0em 3em;
+	background: rgba(0, 0, 0, 0.4);
+	text-shadow: 0px 0px 2px #131415;
+}
+
+#particles-js {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background: rgb(255, 255, 255);
+}

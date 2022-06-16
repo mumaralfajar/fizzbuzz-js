@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" media="screen" href="css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <title>Fizz Buzz!</title>
+  </head>
+  <body>
+    <div id="particles-js"></div>
+    <div class="card">
+      <h1>Is it Fizz or Buzz?</h1>
+      <p>
+        Type in a number and find out.
+        <br /><em>Try 3, 5, or 15 or something else</em> <br />👇
+      </p>
+
+      <form>
+        <label for="number"></label>
+        <input id="number" type="text" />
+        <button type="submit" id="the-button">What is it?</button>
+      </form>
+
+      <h2>
+        It's
+        <span id="result"></span>
+      </h2>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/particles.js"></script>
+  </body>
+</html>
