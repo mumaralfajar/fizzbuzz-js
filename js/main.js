@@ -3,12 +3,9 @@
  * @return {string[]}
  */
 
-
-
 let numberInput = document.getElementById('number');
 let button = document.getElementById('the-button');
 let resultBox = document.getElementById('result');
-
 
 let fizzBuzz = function (n) {
     if (n % 3 == 0 && n % 5 == 0) {
@@ -36,13 +33,30 @@ let whatIsIt = function (event) {
 
     let whatItIs = fizzBuzz(theNumber);
 
-    resultBox.textContent = whatItIs;
+    $("#result").fadeOut("slow", function () {
+        $("#result").fadeIn("slow", function () { resultBox.textContent = whatItIs; });
+    });
 }
 
 let clearResult = function () {
-    result.innerHTML = "...";
+    //result.innerHTML = "...";
+    $("#result").fadeOut("slow", function () {
+        $("#result").fadeIn("slow",function () { result.innerHTML = "..."; });
+    });
 }
 
+// $(document).ready(function () {
+//     $("#result").click(function () {
+//       $("#result").fadeOut("fast", function () {
+//         $("#result").fadeIn();
+//       });
+//     });
+//     $("#the-button").click(function () {
+//       $("#result").fadeOut("slow", function () {
+//         $("#result").fadeIn();
+//       });
+//     });
+//   });
 
 button.addEventListener('click', whatIsIt);
 numberInput.addEventListener('submit', whatIsIt);
