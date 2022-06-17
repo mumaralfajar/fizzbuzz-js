@@ -39,24 +39,11 @@ let whatIsIt = function (event) {
 }
 
 let clearResult = function () {
-    //result.innerHTML = "...";
+
     $("#result").fadeOut("slow", function () {
-        $("#result").fadeIn("slow",function () { result.innerHTML = "..."; });
+        $("#result").fadeIn("slow", function () { result.innerHTML = "..."; });
     });
 }
-
-// $(document).ready(function () {
-//     $("#result").click(function () {
-//       $("#result").fadeOut("fast", function () {
-//         $("#result").fadeIn();
-//       });
-//     });
-//     $("#the-button").click(function () {
-//       $("#result").fadeOut("slow", function () {
-//         $("#result").fadeIn();
-//       });
-//     });
-//   });
 
 button.addEventListener('click', whatIsIt);
 numberInput.addEventListener('submit', whatIsIt);
