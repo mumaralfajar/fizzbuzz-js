@@ -8,7 +8,9 @@ let button = document.getElementById('the-button');
 let resultBox = document.getElementById('result');
 
 let fizzBuzz = function (n) {
-    if (n % 3 == 0 && n % 5 == 0) {
+    if (n == 0) {
+        return "Invalid Input";
+    } else if (n % 3 == 0 && n % 5 == 0) {
         console.log(`${n} is FizzBuzz`);
         return "It'\s FizzBuzz!";
     } else if (n % 3 == 0) {
