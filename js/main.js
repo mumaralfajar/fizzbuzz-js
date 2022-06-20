@@ -21,7 +21,7 @@ let fizzBuzz = function (n) {
         return "It'\s Buzz";
     } else {
         console.log(`${n} is not Fizz or Buzz`);
-        return `${n} Is not Fizz or Buzz!`;
+        return `${n} is not Fizz or Buzz!`;
     };
 }
 
